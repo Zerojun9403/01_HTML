@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🍕 피자주문폼</title>
+  </head>
+  <body>
+    <h1>피자 주문서</h1>
+    <form action="11_연습문제1결과.html">
+      <!--ㅜ수정중-->
+      <label> 고객명 : <input type="text" name="clientName" /> </label>
+      <br />
+      <label> 전화번호 : <input type="text" name="clientPhone" /> </label>
+      <br />
+      <label> 이메일 : <input type="text" name="clientEmail" /> </label>
+      <br />
+      <fieldset>
+        <legend>피자 사이즈</legend>
+        <label>
+          Small <input type="radio" name="size" value="Small" />
+          <br />
+        </label>
+        <label>
+          Medium <input type="radio" name="size" value="Medium" />
+          <br />
+        </label>
+        <label>
+          Large <input type="radio" name="size" value="Large" />
+          <br />
+        </label>
+      </fieldset>
+      <select name="menu">
+        <option>피자를 선택하세요</option>
+        <option>페퍼로니피자</option>
+        <option>고구마피자</option>
+        <option>새우피자</option>
+        <option>브로콜리피자</option>
+      </select>
+
+      <br />
+      <br />
+
+      <fieldset>
+        <legend>토핑 선택</legend>
+        <label>
+          베이컨 <input type="checkbox" name="topping" />
+          <br />
+        </label>
+        <label>
+          치즈 <input type="checkbox" name="topping" />
+          <br />
+        </label>
+        <label>
+          양파 <input type="checkbox" name="topping" />
+          <br />
+        </label>
+        <label>
+          버섯 <input type="checkbox" name="topping" />
+          <br />
+        </label>
+      </fieldset>
+      <br />
+      <br />
+
+      <label> 배송희망시간 <input type="time" name="wishTime" /> </label>
+      <br />
+      <br />
+
+      배송시 요청사항 :<textarea
+        name="request"
+        rows="3"
+        cols="30"
+        style="resize: none"
+      ></textarea>
+      <br />
+    </form>
+
+    <button>주문하기</button>
+  </body>
+</html>
